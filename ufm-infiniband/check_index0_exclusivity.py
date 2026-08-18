@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+## ~omadjoudj
+
 """
 check_index0_exclusivity.py — Read-only UFM check that a node's HCA ports hold
 Index-0 membership in EXACTLY ONE pkey.

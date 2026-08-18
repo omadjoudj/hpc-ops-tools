@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
+## ~omadjoudj
+
 """
 check_pkey_membership.py — Read-only UFM REST API check of a node's pkey membership.
 
 Verifies whether a node's HCA ports are members of a given pkey, and reports
-Index-0 and full/limited membership per port. Intended as pre-change (SOP Step 3
-checkpoint) and post-change verification evidence for JIRA — it performs GET
-requests only and never modifies UFM state.
+Index-0 and full/limited membership per port. it performs GET requests only 
+and never modifies UFM state.
 
 Usage:
     ./check_pkey_membership.py <hostname> <pkey> [options]
