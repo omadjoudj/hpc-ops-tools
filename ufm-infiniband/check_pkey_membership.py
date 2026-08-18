@@ -12,10 +12,10 @@ Usage:
     ./check_pkey_membership.py <hostname> <pkey> [options]
 
 Examples:
-    ./check_pkey_membership.py research-b300-inference-015 0x678
-    ./check_pkey_membership.py research-b300-inference-015 0x8678   # membership bit auto-stripped
+    ./check_pkey_membership.py research-b300-inference-015 0x678 --insecure
+    ./check_pkey_membership.py research-b300-inference-015 0x8678  --insecure # membership bit auto-stripped
     UFM_HOST=ufm-vip.example.com UFM_USER=admin UFM_PASS=... \
-        ./check_pkey_membership.py research-b300-inference-031 0x678 --json
+        ./check_pkey_membership.py research-b300-inference-031 0x678 --insecure --json
 
 Environment variables (can also be passed as flags):
     UFM_HOST   UFM VIP hostname/IP (required unless --host given)
